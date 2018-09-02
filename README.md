@@ -35,7 +35,11 @@ When connected, deleted line containing "Port 22" at /etc/ssh/sshd_config file.
 
 Deleted port 22 connections at Amazon Lightsail Firewall
 
-
+#### Disable root login on SSH
+Changed PermitRootLogin property to /etc/ssh/sshd_config file
+```sh
+PermitRootLogin no 
+```
 ### FW rules
 
 #### Local Firewall (Uncomplicated Firewall)
